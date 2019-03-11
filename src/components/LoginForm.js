@@ -22,7 +22,7 @@ class LoginForm extends React.Component {
   handleSubmit = event => {
     event.preventDefault() ;
     if (!!this.state.text && !!this.state.password) {
-      this.props.onSubmit(event) ;
+      this.props.onSubmit(this.state.text, this.state.password) ;
     }
   }
   render() {
