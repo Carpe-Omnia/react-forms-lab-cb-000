@@ -12,8 +12,8 @@ class TwitterMessage extends React.Component {
     this.setState( {
       textInput: event.target.value
     })
-    console.log(this.props.maxChars )
-    console.log(parseInt(event.target.value.length, 10))
+    console.log(this.props.maxChars - event.target.value.length)
+
   }
   render() {
     return (
