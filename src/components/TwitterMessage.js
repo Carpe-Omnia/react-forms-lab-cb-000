@@ -1,8 +1,8 @@
 import React from "react";
 
 class TwitterMessage extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       textInput: ""
@@ -12,7 +12,7 @@ class TwitterMessage extends React.Component {
     this.setState( {
       textInput: event.target.value
     })
-    console.log(event.target.value)
+    console.log(event.target.value.length)
   }
   render() {
     return (
