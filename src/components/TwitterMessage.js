@@ -5,7 +5,8 @@ class TwitterMessage extends React.Component {
     super(props);
 
     this.state = {
-      textInput: ""
+      textInput: "",
+      charsLeft: this.props.maxChars
     };
   }
   handleInput = event => {
