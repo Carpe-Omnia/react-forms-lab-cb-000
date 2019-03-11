@@ -12,6 +12,7 @@ class TwitterMessage extends React.Component {
     this.setState( {
       textInput: event.target.value
     })
+    console.log(event.target.value)
   }
   render() {
     return (
